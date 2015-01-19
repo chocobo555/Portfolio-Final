@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FF8A77D0-F6AF-047D-A7FA-515D8BBF1B0E}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-Editor</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_3;UNITY_4_5;UNITY_STANDALONE_WIN;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;UNITY_STANDALONE;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_MOVIES;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_DUCK_TYPING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\DeleteNoDrawFaces.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\ExportObj.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\MakeAsset.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\ProBuilderizeGameObject.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Actions\StripProBuilderScripts.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\Bridge.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\ConformNormals.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\ConnectEdges.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\DetachDeleteFace.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\ExtrudeFace.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\FlipFaces.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\PivotTool.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Geometry\VertexMergeWeld.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\CleanUpLeakedMeshes.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\ComponentCheck.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\DegenerateTris.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\FixGameObjectFlags.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\FixShaderWantsNormals.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\ForceMakeUnique.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\ForceMeshRefresh.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\InvertUVScale.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\RebuildSharedIndices.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Repair\RebuildVertexCaches.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Selection\EdgeSelection.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Selection\ExpandSelection.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Selection\InvertSelection.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Selection\MaterialSelection.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Tools\AutoNodraw.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Tools\ProjectNodrawUtil.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Tools\SelectFacesWithMaterial.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\MenuItems\Window\ProBuilderOnlyWindows.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\ProBuilderMenuItems.cs" />
+     <Compile Include="Assets\ProCore\ProBuilder\Editor\pb_Preferences.cs" />
+     <Compile Include="Assets\ProCore\ProGrids\Editor\pg_Constant.cs" />
+     <Compile Include="Assets\ProCore\ProGrids\Editor\pg_Editor.cs" />
+     <Compile Include="Assets\ProCore\ProGrids\Editor\pg_GridRenderer.cs" />
+     <Compile Include="Assets\ProCore\ProGrids\Editor\pg_Preferences.cs" />
+     <Compile Include="Assets\ProCore\ProGroups\Scripts\Editor\ProGroups_About.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_About.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Help.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Painter.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Utility.cs" />
+     <Compile Include="Assets\ProCore\QuickBrush\Editor\qb_Window.cs" />
+     <Compile Include="Assets\ProCore\QuickDecals\Editor\qd_Decal_Editor.cs" />
+     <Compile Include="Assets\ProCore\QuickDecals\Editor\qd_Editor.cs" />
+     <Compile Include="Assets\ProCore\QuickDecals\Editor\qd_Preferences.cs" />
+     <Compile Include="Assets\ProCore\QuickEdit\Scripts\Editor\QuickEdit_About.cs" />
+     <Compile Include="Assets\ProCore\Shared\About\Editor\pc_AboutWindow.cs" />
+     <None Include="Assets\ProCore\ProGrids\Shader\PerspectiveGrid.shader" />
+     <None Include="Assets\ProCore\QuickEdit\About\pc_AboutEntry_QuickEdit.txt" />
+     <None Include="Assets\ProCore\QuickBrush\Docs\ChangeLog.txt" />
+     <None Include="Assets\ProCore\ProBuilder\About\changelog.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\VertexBillboard.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColor.shader" />
+     <None Include="Assets\ProCore\ProGroups\About\changelog.txt" />
+     <None Include="Assets\ProCore\Shared\About\README.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColorTransparency.shader" />
+     <None Include="Assets\ProCore\ProGrids\About\pc_AboutEntry_ProGrids.txt" />
+     <None Include="Assets\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\ProCore\QuickEdit\About\changelog.txt" />
+     <None Include="Assets\ProCore\ProGroups\About\pc_AboutEntry_ProGroups.txt" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\UnlitColor.shader" />
+     <None Include="Assets\ProCore\QuickDecals\About\changelog.txt" />
+     <None Include="Assets\ProCore\ProBuilder\API Examples\Instantiation\README.txt" />
+     <None Include="Assets\ProCore\QuickDecals\About\pc_AboutEntry_QuickDecals.txt" />
+     <None Include="Assets\ProCore\ProBuilder\About\pc_AboutEntry_ProBuilder.txt" />
+     <None Include="Assets\ProCoreCompleteBundle\!!README.txt" />
+     <None Include="Assets\ProCore\ProGrids\About\changelog.txt" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\UnlitColor-Overlay.shader" />
+     <None Include="Assets\ProCore\ProBuilder\Shader\DiffuseVertexColorEmission.shader" />
+     <None Include="Assets\ProCore\ProBuilder\About\Credits.txt" />
+ <Reference Include="ProBuilderCore">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/ProCore/ProBuilder/Classes/ProBuilderCore.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderMeshOps">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/ProCore/ProBuilder/Classes/ProBuilderMeshOps.dll</HintPath>
+ </Reference>
+ <Reference Include="ProBuilderEditor">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/ProCore/ProBuilder/Editor/ProBuilderEditor.dll</HintPath>
+ </Reference>
+ <Reference Include="ProCore">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/ProCore/Shared/Code/ProCore.dll</HintPath>
+ </Reference>
+ <Reference Include="SixBySeven">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/ProCore/Shared/Code/SixBySeven.dll</HintPath>
+ </Reference>
+ <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+ </Reference>
+ <Reference Include="SyntaxTree.VisualStudio.Unity.Messaging">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/UnityVS/Editor/SyntaxTree.VisualStudio.Unity.Messaging.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityVS.VersionSpecific">
+ <HintPath>Z:/Game AI Programming/ZeldaGame/New Unity Project 19/Assets/UnityVS/Editor/UnityVS.VersionSpecific.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.Graphs">
+ <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.Graphs.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{B0AFAD8A-9903-ED11-C721-95B7188BDD7E}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{91AC166E-5C16-3FC9-30AC-19D3D7953A2E}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript.unityproj">
+      <Project>{ABA7BA09-3C71-91ED-34DE-A72BC1C282FE}</Project>      <Name>Assembly-UnityScript</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
